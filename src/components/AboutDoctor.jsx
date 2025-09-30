@@ -1,6 +1,7 @@
 import React from 'react'
 import { Quote } from 'lucide-react'
 import slowAlphaVideo from '../assets/slow-alpha.webm'
+import drKoketsoImage from '../assets/dr-koketso.jpg'
 
 export default function AboutDoctor() {
   return (
@@ -19,7 +20,7 @@ export default function AboutDoctor() {
             {/* Main image container */}
             <div className="relative rounded-3xl overflow-hidden shadow-strong bg-white">
               <img
-                src="/dr-koketso.jpg"
+                src={drKoketsoImage}
                 alt="Dr. Koketso Rakhudu"
                 className="w-full aspect-[4/5] object-cover object-center"
                 loading="eager"
