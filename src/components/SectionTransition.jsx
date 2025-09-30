@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import coffeeBeanBlast from '../assets/coffee-bean-blast.webm'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -42,9 +43,8 @@ export default function SectionTransition() {
         muted
         playsInline
         preload="auto"
-      >
-        <source src="./src/assets/coffee-bean-blast.webm" type="video/webm" />
-      </video>
+        src={coffeeBeanBlast}
+      />
     </div>
   )
 }

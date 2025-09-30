@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from 'react'
+import heroVideo from '../assets/hero.webm'
+import posterImage from '../assets/poster.jpg'
 
 export default function Hero() {
   const videoRef = useRef(null)
@@ -16,8 +18,8 @@ export default function Hero() {
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
-        src="./src/assets/hero.webm"
-        poster="./src/assets/poster.jpg"
+        src={heroVideo}
+        poster={posterImage}
         autoPlay
         playsInline
         loop

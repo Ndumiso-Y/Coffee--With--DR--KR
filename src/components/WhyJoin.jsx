@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Target, Lightbulb, Star, Users, TrendingUp, Trophy } from 'lucide-react'
+import slowAlphaLeftVideo from '../assets/slow-alpha-left.webm'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -86,14 +87,11 @@ export default function WhyJoin() {
         muted
         playsInline
         preload="auto"
+        src={slowAlphaLeftVideo}
         onLoadStart={() => console.log('WhyJoin coffee splash loading...')}
         onCanPlay={() => console.log('WhyJoin coffee splash ready!')}
         onError={(e) => console.log('WhyJoin coffee splash error:', e)}
-      >
-        <source src="./src/assets/coffee-blast-transparent.webm" type="video/webm" />
-        <source src="./src/assets/coffee-blast-fallback.mp4" type="video/mp4" />
-        <source src="./src/assets/Coffee Bean Blast trans.mov" type="video/quicktime" />
-      </video>
+      />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-12 lg:mb-16">

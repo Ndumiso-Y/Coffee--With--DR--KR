@@ -1,4 +1,5 @@
 import React from 'react'
+import slowAlphaVideo from '../assets/slow-alpha.webm'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -10,9 +11,8 @@ export default function Footer() {
         loop
         muted
         playsInline
-      >
-        <source src="./src/assets/slow-alpha.webm" type="video/webm" />
-      </video>
+        src={slowAlphaVideo}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 relative z-10">
         <div className="text-xs sm:text-sm text-cream/80 text-center md:text-left">
           © {year} Coffee with Dr. Koketso Rakhudu — Designed by Embark Digitals

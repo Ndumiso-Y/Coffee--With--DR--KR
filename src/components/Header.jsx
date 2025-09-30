@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../assets/logo.png'
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
         <a href="#top" className="group relative py-2">
           <div className="absolute -inset-4 bg-gradient-to-r from-coffeeOrange/30 via-orange-500/30 to-coffeeOrange/30 rounded-3xl opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-500"></div>
           <img
-            src="./src/assets/logo.png"
+            src={logo}
             alt="Coffee with Dr. Koketso Rakhudu Logo"
             className="h-12 sm:h-16 lg:h-20 w-auto relative z-10 brightness-110 contrast-125 saturate-110 drop-shadow-[0_0_20px_rgba(255,140,0,0.5)] group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(255,140,0,0.8)] transition-all duration-300"
           />

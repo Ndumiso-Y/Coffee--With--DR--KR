@@ -1,5 +1,6 @@
 import React from 'react'
 import { Quote } from 'lucide-react'
+import slowAlphaVideo from '../assets/slow-alpha.webm'
 
 export default function AboutDoctor() {
   return (
@@ -81,9 +82,8 @@ export default function AboutDoctor() {
                   loop
                   muted
                   playsInline
-                >
-                  <source src="./src/assets/slow-alpha.webm" type="video/webm" />
-                </video>
+                  src={slowAlphaVideo}
+                />
                 <Quote className="absolute top-3 left-3 sm:top-4 sm:left-4 w-6 h-6 sm:w-8 sm:h-8 text-coffeeOrange/50 z-10" />
                 <blockquote className="relative z-10 text-base sm:text-lg font-medium italic pl-6 sm:pl-8">
                   "True impact happens when passion meets purpose, strategy meets action, and individual vision becomes collective change."
