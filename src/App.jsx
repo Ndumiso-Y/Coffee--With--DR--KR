@@ -19,8 +19,10 @@ gsap.registerPlugin(ScrollTrigger)
 export default function App() {
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const isMobile = window.innerWidth < 768
 
-    if (!reduce) {
+    // Disable animations on mobile
+    if (!reduce && !isMobile) {
       gsap.utils.toArray('.reveal').forEach((el) => {
         gsap.fromTo(el, { y: 40, opacity: 0 }, {
           y: 0,
@@ -30,7 +32,8 @@ export default function App() {
           scrollTrigger: {
             trigger: el,
             start: 'top 85%',
-            toggleActions: 'play none none reverse'
+            toggleActions: 'play none none none',
+            once: true
           },
           stagger: 0.12
         })

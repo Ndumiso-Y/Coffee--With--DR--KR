@@ -69,7 +69,7 @@ export default function WhyJoin() {
   ]
 
   return (
-    <section className="reveal py-20 bg-gradient-to-br from-white via-cream-50 to-cream relative overflow-hidden">
+    <section className="reveal py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-white via-cream-50 to-cream relative overflow-hidden">
       {/* Background patterns */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-48 h-48 bg-coffeeOrange/20 rounded-full blur-3xl"></div>
@@ -77,10 +77,10 @@ export default function WhyJoin() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-warmCoffee/10 rounded-full blur-2xl"></div>
       </div>
 
-      {/* Coffee splash decoration */}
+      {/* Coffee splash decoration - hidden on mobile */}
       <video
         ref={videoRef}
-        className="absolute bottom-20 left-10 w-64 h-64 object-contain pointer-events-none z-0"
+        className="hidden lg:block absolute bottom-20 left-10 w-64 h-64 object-contain pointer-events-none z-0"
         autoPlay
         loop
         muted
@@ -95,35 +95,35 @@ export default function WhyJoin() {
         <source src="/src/assets/Coffee Bean Blast trans.mov" type="video/quicktime" />
       </video>
 
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold bg-coffee-gradient bg-clip-text text-transparent mb-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-coffee-gradient bg-clip-text text-transparent mb-3 sm:mb-4">
             Why Join the Coffee Programme
           </h2>
-          <div className="w-24 h-1 bg-orange-gradient mx-auto rounded-full"></div>
-          <p className="mt-6 text-xl text-charcoal/70 max-w-3xl mx-auto">
+          <div className="w-20 sm:w-24 h-1 bg-orange-gradient mx-auto rounded-full"></div>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-charcoal/70 max-w-3xl mx-auto px-4">
             Transform your impact potential with comprehensive support, expert guidance, and a community of changemakers
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {benefits.map((benefit, index) => (
             <div key={benefit.title} className="group relative" style={{animationDelay: `${index * 100}ms`}}>
               {/* Glow effect */}
               <div className={`absolute -inset-0.5 bg-gradient-to-r ${benefit.gradient} rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-300`}></div>
 
               {/* Main card */}
-              <div className="relative rounded-3xl p-8 bg-white/90 backdrop-blur-sm shadow-soft border border-white/50 group-hover:shadow-medium group-hover:-translate-y-2 transition-all duration-300">
+              <div className="relative rounded-3xl p-6 sm:p-8 bg-white/90 backdrop-blur-sm shadow-soft border border-white/50 group-hover:shadow-medium group-hover:-translate-y-2 transition-all duration-300">
                 {/* Icon */}
-                <div className={`w-14 h-14 bg-gradient-to-r ${benefit.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-soft group-hover:scale-110 transition-transform duration-300`}>
-                  <benefit.icon className="w-7 h-7 text-white" />
+                <div className={`w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r ${benefit.gradient} rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-soft group-hover:scale-110 transition-transform duration-300`}>
+                  <benefit.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold text-deepCoffee mb-3 group-hover:text-coffeeOrange transition-colors duration-300">
+                <h3 className="text-lg sm:text-xl font-bold text-deepCoffee mb-2 sm:mb-3 group-hover:text-coffeeOrange transition-colors duration-300">
                   {benefit.title}
                 </h3>
-                <p className="text-charcoal/80 leading-relaxed">
+                <p className="text-sm sm:text-base text-charcoal/80 leading-relaxed">
                   {benefit.desc}
                 </p>
 
@@ -139,16 +139,16 @@ export default function WhyJoin() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-4 bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-medium">
-            <div className="w-12 h-12 bg-gradient-to-r from-coffeeOrange to-warmCoffee rounded-full flex items-center justify-center">
+        <div className="mt-12 sm:mt-16 text-center">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-4 bg-white/60 backdrop-blur-sm rounded-2xl p-5 sm:p-6 shadow-medium">
+            <div className="w-12 h-12 bg-gradient-to-r from-coffeeOrange to-warmCoffee rounded-full flex items-center justify-center shrink-0">
               <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5 9.293 10.793a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
               </svg>
             </div>
-            <div>
-              <p className="text-lg font-semibold text-deepCoffee">Ready to brew your impact?</p>
-              <p className="text-charcoal/60">Join the next cohort of changemakers</p>
+            <div className="text-center sm:text-left">
+              <p className="text-base sm:text-lg font-semibold text-deepCoffee">Ready to brew your impact?</p>
+              <p className="text-sm sm:text-base text-charcoal/60">Join the next cohort of changemakers</p>
             </div>
           </div>
         </div>

@@ -42,16 +42,16 @@ export default function CoffeeFramework() {
   }, [])
 
   return (
-    <section id="framework" className="reveal bg-gradient-to-br from-cream-50 via-cream to-white py-20 relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-extrabold bg-coffee-gradient bg-clip-text text-transparent mb-4">
+    <section id="framework" className="reveal bg-gradient-to-br from-cream-50 via-cream to-white py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold bg-coffee-gradient bg-clip-text text-transparent mb-3 sm:mb-4">
             C.O.F.F.E.E. Framework
           </h2>
-          <div className="w-24 h-1 bg-orange-gradient mx-auto rounded-full"></div>
+          <div className="w-20 sm:w-24 h-1 bg-orange-gradient mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {items.map((it, index) => (
             <div
               key={it.key}
@@ -62,19 +62,19 @@ export default function CoffeeFramework() {
               <div className="absolute -inset-0.5 bg-orange-gradient rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
 
               {/* Main card */}
-              <div className="relative rounded-3xl p-8 bg-white/80 backdrop-blur-sm shadow-medium border border-white/50 group-hover:shadow-strong group-hover:-translate-y-2 transition-all duration-300">
+              <div className="relative rounded-3xl p-6 sm:p-8 bg-white/80 backdrop-blur-sm shadow-medium border border-white/50 group-hover:shadow-strong group-hover:-translate-y-2 transition-all duration-300">
                 {/* Floating badge */}
-                <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-coffeeOrange to-warmCoffee rounded-2xl flex flex-col items-center justify-center text-white shadow-medium group-hover:animate-pulse">
-                  <it.icon className={`w-6 h-6 ${it.color} text-white`} />
-                  <span className="text-xs font-bold mt-1">{it.key}</span>
+                <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-coffeeOrange to-warmCoffee rounded-2xl flex flex-col items-center justify-center text-white shadow-medium group-hover:animate-pulse">
+                  <it.icon className={`w-5 h-5 sm:w-6 sm:h-6 ${it.color} text-white`} />
+                  <span className="text-xs font-bold mt-0.5 sm:mt-1">{it.key}</span>
                 </div>
 
                 {/* Content */}
                 <div className="pt-4">
-                  <h3 className="text-2xl font-bold text-deepCoffee mb-3 group-hover:text-coffeeOrange transition-colors duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold text-deepCoffee mb-2 sm:mb-3 group-hover:text-coffeeOrange transition-colors duration-300">
                     {it.title}
                   </h3>
-                  <p className="text-charcoal/80 text-lg leading-relaxed">
+                  <p className="text-charcoal/80 text-base sm:text-lg leading-relaxed">
                     {it.desc}
                   </p>
                 </div>

@@ -6,14 +6,14 @@ export default function Header() {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black via-charcoal/90 to-black pointer-events-none"></div>
 
-      <nav className="container mx-auto px-8 py-4 flex items-center justify-between relative z-10">
+      <nav className="container mx-auto px-4 sm:px-8 py-4 flex items-center justify-between relative z-10">
         {/* Logo */}
         <a href="#top" className="group relative py-2">
           <div className="absolute -inset-4 bg-gradient-to-r from-coffeeOrange/30 via-orange-500/30 to-coffeeOrange/30 rounded-3xl opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-500"></div>
           <img
             src="/src/assets/logo.png"
             alt="Coffee with Dr. Koketso Rakhudu Logo"
-            className="h-20 w-auto relative z-10 brightness-110 contrast-125 saturate-110 drop-shadow-[0_0_20px_rgba(255,140,0,0.5)] group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(255,140,0,0.8)] transition-all duration-300"
+            className="h-12 sm:h-16 lg:h-20 w-auto relative z-10 brightness-110 contrast-125 saturate-110 drop-shadow-[0_0_20px_rgba(255,140,0,0.5)] group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(255,140,0,0.8)] transition-all duration-300"
           />
         </a>
 
@@ -41,10 +41,10 @@ export default function Header() {
         {/* Apply Button */}
         <a
           href="#apply"
-          className="relative group overflow-hidden"
+          className="relative group overflow-hidden shrink-0"
         >
           <div className="absolute -inset-2 bg-gradient-to-r from-coffeeOrange via-orange-500 to-red-500 rounded-2xl opacity-60 group-hover:opacity-100 blur-lg group-hover:blur-xl transition-all duration-300 animate-pulse"></div>
-          <div className="relative px-10 py-4 bg-gradient-to-r from-coffeeOrange via-orange-600 to-orange-700 rounded-2xl font-black text-lg text-white shadow-2xl group-hover:shadow-[0_0_40px_rgba(255,140,0,0.8)] transform group-hover:scale-110 transition-all duration-300 border-2 border-orange-400/50">
+          <div className="relative px-4 py-2 sm:px-8 sm:py-3 lg:px-10 lg:py-4 bg-gradient-to-r from-coffeeOrange via-orange-600 to-orange-700 rounded-2xl font-black text-sm sm:text-base lg:text-lg text-white shadow-2xl group-hover:shadow-[0_0_40px_rgba(255,140,0,0.8)] transform group-hover:scale-110 transition-all duration-300 border-2 border-orange-400/50">
             APPLY NOW
           </div>
         </a>
