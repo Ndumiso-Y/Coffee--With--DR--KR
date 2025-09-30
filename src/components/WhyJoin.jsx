@@ -17,7 +17,7 @@ export default function WhyJoin() {
       gsap.set(videoRef.current, { opacity: 0, rotation: -15 })
 
       gsap.to(videoRef.current, {
-        opacity: 0.4,
+        opacity: 0,
         rotation: 0,
         duration: 1.5,
         ease: 'power2.out',
