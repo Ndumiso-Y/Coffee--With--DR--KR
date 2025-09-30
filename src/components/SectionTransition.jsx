@@ -16,15 +16,15 @@ export default function SectionTransition() {
       gsap.fromTo(videoRef.current,
         { opacity: 0, scale: 0.8 },
         {
-          opacity: 1,
+          opacity: 0.7,
           scale: 1,
           duration: 1.2,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: videoRef.current,
             start: 'top 70%',
-            end: 'bottom 30%',
-            toggleActions: 'play none none reverse'
+            toggleActions: 'play none none none',
+            once: true
           }
         }
       )
