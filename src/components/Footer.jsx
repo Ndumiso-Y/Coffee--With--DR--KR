@@ -11,7 +11,7 @@ export default function Footer() {
         muted
         playsInline
       >
-        <source src="/src/assets/slow-alpha.webm" type="video/webm" />
+        <source src="./src/assets/slow-alpha.webm" type="video/webm" />
       </video>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 relative z-10">
         <div className="text-xs sm:text-sm text-cream/80 text-center md:text-left">

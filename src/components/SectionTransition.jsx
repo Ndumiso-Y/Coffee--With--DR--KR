@@ -43,7 +43,7 @@ export default function SectionTransition() {
         playsInline
         preload="auto"
       >
-        <source src="/src/assets/coffee-bean-blast.webm" type="video/webm" />
+        <source src="./src/assets/coffee-bean-blast.webm" type="video/webm" />
       </video>
     </div>
   )

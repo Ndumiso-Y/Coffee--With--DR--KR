@@ -16,8 +16,8 @@ export default function Hero() {
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
-        src="/src/assets/hero.webm"
-        poster="/src/assets/poster.jpg"
+        src="./src/assets/hero.webm"
+        poster="./src/assets/poster.jpg"
         autoPlay
         playsInline
         loop

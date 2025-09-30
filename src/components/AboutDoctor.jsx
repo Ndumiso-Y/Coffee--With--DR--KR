@@ -82,7 +82,7 @@ export default function AboutDoctor() {
                   muted
                   playsInline
                 >
-                  <source src="/src/assets/slow-alpha.webm" type="video/webm" />
+                  <source src="./src/assets/slow-alpha.webm" type="video/webm" />
                 </video>
                 <Quote className="absolute top-3 left-3 sm:top-4 sm:left-4 w-6 h-6 sm:w-8 sm:h-8 text-coffeeOrange/50 z-10" />
                 <blockquote className="relative z-10 text-base sm:text-lg font-medium italic pl-6 sm:pl-8">
