@@ -2,10 +2,10 @@ import React from 'react'
 import { Calendar, Globe, Target, Users, Handshake, Sprout } from 'lucide-react'
 
 const items = [
-  { label: 'Duration', value: '12 months', icon: Calendar, color: 'from-coffeeOrange to-warmCoffee' },
+  { label: 'Duration', value: 'Tailor Made', icon: Calendar, color: 'from-coffeeOrange to-warmCoffee' },
   { label: 'Format', value: 'Hybrid (in-person & online)', icon: Globe, color: 'from-warmCoffee to-deepCoffee' },
   { label: 'Monthly', value: 'Themed workshops', icon: Target, color: 'from-coffeeOrange to-charcoal' },
-  { label: 'Mentorship', value: '1:1 with Dr. Koketso & leaders', icon: Users, color: 'from-deepCoffee to-charcoal' },
+  { label: 'Mentorship', value: 'One on One Mentorship with Dr. Koketso Rakhudu', icon: Users, color: 'from-deepCoffee to-charcoal' },
   { label: 'Quarterly', value: 'Networking events', icon: Handshake, color: 'from-warmCoffee to-coffeeOrange' },
   { label: 'Community', value: 'Engagement projects', icon: Sprout, color: 'from-charcoal to-deepCoffee' },
 ]

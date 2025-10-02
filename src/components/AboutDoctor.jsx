@@ -1,7 +1,7 @@
 import React from 'react'
 import { Quote } from 'lucide-react'
 import slowAlphaVideo from '../assets/slow-alpha.webm'
-import drKoketsoImage from '../assets/dr-koketso.jpg'
+import drKoketsoImage from '../assets/dr-koketso-facing-the-front.jpg'
 
 export default function AboutDoctor() {
   return (
@@ -18,19 +18,19 @@ export default function AboutDoctor() {
             <div className="absolute -inset-4 bg-gradient-to-r from-coffeeOrange to-warmCoffee rounded-3xl blur opacity-20"></div>
 
             {/* Main image container */}
-            <div className="relative rounded-3xl overflow-hidden shadow-strong bg-white">
+            <div className="relative rounded-3xl overflow-hidden shadow-strong bg-gradient-to-br from-charcoal via-deepCoffee to-charcoal">
               <img
                 src={drKoketsoImage}
                 alt="Dr. Koketso Rakhudu"
-                className="w-full aspect-[4/5] object-cover object-center"
+                className="w-full aspect-[3/4] object-cover"
                 loading="eager"
                 decoding="sync"
                 style={{
                   imageRendering: 'high-quality',
-                  filter: 'contrast(1.15) brightness(1.08) saturate(1.05)',
                   backfaceVisibility: 'hidden',
                   transform: 'translateZ(0)',
-                  willChange: 'transform'
+                  willChange: 'transform',
+                  objectPosition: 'center 42%'
                 }}
               />
             </div>

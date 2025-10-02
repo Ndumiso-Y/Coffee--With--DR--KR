@@ -9,6 +9,7 @@ import CoreComponents from './components/CoreComponents.jsx'
 import WhoShouldJoin from './components/WhoShouldJoin.jsx'
 import WhyJoin from './components/WhyJoin.jsx'
 import ImpactStats from './components/ImpactStats.jsx'
+import Contact from './components/Contact.jsx'
 import ApplyBanner from './components/ApplyBanner.jsx'
 import Footer from './components/Footer.jsx'
 import { gsap } from 'gsap'
@@ -54,6 +55,7 @@ export default function App() {
         <WhoShouldJoin />
         <WhyJoin />
         <ImpactStats />
+        <Contact />
         <ApplyBanner />
       </main>
       <Footer />

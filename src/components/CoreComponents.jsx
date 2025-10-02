@@ -3,7 +3,7 @@ import { GraduationCap, Star, Users, Globe } from 'lucide-react'
 
 const items = [
   { title: 'Workshops', desc: 'Sessions with experts & practitioners', icon: GraduationCap, gradient: 'from-coffeeOrange to-warmCoffee' },
-  { title: 'Mentorship', desc: 'Guidance with Dr. Koketso & leaders', icon: Star, gradient: 'from-warmCoffee to-deepCoffee' },
+  { title: 'Mentorship', desc: 'Guidance with Dr. Koketso Rakhudu & leaders', icon: Star, gradient: 'from-warmCoffee to-deepCoffee' },
   { title: 'Networking', desc: 'Quarterly events to grow your circle', icon: Users, gradient: 'from-deepCoffee to-charcoal' },
   { title: 'Community Projects', desc: 'Hands-on impact in real contexts', icon: Globe, gradient: 'from-charcoal to-coffeeOrange' },
 ]

@@ -31,7 +31,7 @@ export default function Hero() {
           Coffee with Dr. Koketso Rakhudu
         </h1>
         <p className="mt-6 text-base sm:text-lg md:text-xl text-charcoal/90 max-w-2xl mx-auto font-medium leading-relaxed">
-          A year-long consulting &amp; mentorship programme empowering social changemakers.
+          Consulting &amp; Mentorship Programme Empowering Social Change Makers
         </p>
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="#apply" className="w-full sm:w-auto group relative inline-flex items-center justify-center rounded-2xl bg-coffeeOrange px-8 py-4 text-white font-bold shadow-strong hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
